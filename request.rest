@@ -1,0 +1,27 @@
+##Step 1 : Use POST method to register an account first
+
+POST http://localhost:3000/users/reg 
+Content-Type: application/json
+
+{
+"name": "User1", "password": "password"
+}
+
+##Step 2 : Use POST method to login and get the token
+
+POST http://localhost:3000/users/login 
+Content-Type: application/json
+
+{
+"name": "User1", "password": "password"
+}
+
+##Step 3 : Copy and paste the token u got in Step2 and u will get a response in JSON 
+
+POST http://localhost:3000/q=dog
+Content-Type: application/json
+Authorization: Bearer <The Token>
+
+{
+"name": "User1", "password": "Password"
+}

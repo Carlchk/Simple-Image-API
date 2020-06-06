@@ -1,0 +1,20 @@
+{
+  "name": "1bapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4",
+    "pixabay-api": "^1.0.4",
+    "unsplash-api": "^1.2.0"
+  }
+}

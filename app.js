@@ -57,7 +57,7 @@ app.post('/users/login', async (req, res) => {
     }
 })
 
-function verifyToken(req, res, next) {  // Verify the token make sure the user are loged in
+function verifyToken(req, res, next) {  // Verify the token make sure the user are logged in and got valid token
 // By Bearer token
     const bearerHeader = req.headers['authorization'];
     if (typeof bearerHeader !== undefined) {
@@ -66,7 +66,7 @@ function verifyToken(req, res, next) {  // Verify the token make sure the user a
         req.token = bearerToken;
         next();
     } else {
-        res.sendStatus(403);   // if can pass the verification then 
+        res.sendStatus(403);   // if cant pass the verification then return 403
     }
 
 }
